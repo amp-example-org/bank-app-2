@@ -150,9 +150,9 @@ namespace AcmeBankApp.Tests
         {
             // Arrange
             string sql = "SELECT * FROM Users WHERE UserName = @UserName";
-            var parameters = new System.Data.SqlClient.SqlParameter[]
+            var parameters = new Microsoft.Data.SqlClient.SqlParameter[]
             {
-                new System.Data.SqlClient.SqlParameter("@UserName", "demo")
+                new Microsoft.Data.SqlClient.SqlParameter("@UserName", "demo")
             };
 
             // Act
